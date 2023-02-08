@@ -1,17 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import ReactDOM from "react-dom"; //! ReactDOM wird importiert um die verbindung von unserer APP und unserem documenten herzustellen.
+import React from "react";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+import App from "./App"; //! importiert unsere eigentliches Projekt/App
+import "./main.scss";
+
+ReactDOM.render(
+  <App />, //! deklaration unserer importierten APP in einem SELFCLOSING TAG.
+  document.getElementById("root")
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
